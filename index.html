@@ -59,6 +59,19 @@
     document.getElementById('user-input').addEventListener('keypress', function(e) {
       if (e.key === 'Enter') sendMessage();
     });
+
+    function searchMessages(query) {
+      const messages = document.querySelectorAll('#chat-box .message');
+      const keyword = query.trim().toLowerCase();
+      messages.forEach(msg => {
+        const text = msg.textContent.toLowerCase();
+        if (keyword === '' || text.includes(keyword)) {
+          msg.classList.remove('hidden');
+        } else {
+          msg.classList.add('hidden');
+        }
+      });
+    }
   </script>
 
 </body>

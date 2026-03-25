@@ -112,7 +112,7 @@ header input {
   border-radius: 6px;
   font-size: 13px;
   background: rgba(255, 255, 255, 0.25);
-  color: rgb(136, 193, 199);
+  color: rgb(193, 133, 166);
 }
 
 header input::placeholder {
